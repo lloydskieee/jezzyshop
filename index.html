@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jezzy's Shop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="login_style.css">
+    <link rel="stylesheet" href="shop_style.css">
+</head>
+<body>
+    <header>
+        <div>
+          <img src="img-shopee-logo.png" alt="store logo">
+        </div>
+        <div>
+          <h1>Jezzy's Shop</h1>
+          <h6>better than Lazada</h6>
+        </div>
+      </header>
+<center>
+    <h2>Jezzy's Shop Login</h2>
+    <button id="loginbtn" onclick="document.getElementById('id01').style.display='block'">Login</button>
+    
+    <div class="ads">
+      <img src="https://down-ph.img.susercontent.com/file/sg-11134004-7qvec-lg0c6enbjmsl8e" alt="banner-ads">
+    </div>
+</center>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="shop.html" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img-avatar-removebg-preview.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script src="login_script.js"></script>
+
+</body>
+</html>
