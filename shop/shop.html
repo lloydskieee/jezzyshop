@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jezzy's Shop</title>
+        <link rel="stylesheet" href="shop_style.css">
+    </head>
+    <body>
+        <header>
+            <div>
+              <img src="img-shopee-logo.png" alt="store logo">
+            </div>
+            <div>
+              <h1>Jezzy's Shop</h1>
+              <h6>better than Lazada</h6>
+            </div>
+          </header>          
+        <main>
+            <div id="products">
+                <div class="product">
+                  <div class="slider">
+                    <img src="https://th-test-11.slatic.net/p/af477b1997b1600ef787a50a04adb1a0.jpg" alt="Product 1">
+                    <img src="https://lzd-img-global.slatic.net/g/p/2e7c0577f60c554ba571ec6ab1d27c37.jpg_720x720q80.jpg_.webp" alt="Product 1">
+                    <img src="https://cdn.shopify.com/s/files/1/0088/8759/9140/products/ForOnlineStorePhotos-Grabe2_grande.jpg?v=1674093616" alt="Product 1">
+                  </div>
+                  <h2>T-Shirt</h2>
+                  <p>$10.00</p>
+                  <button class="add-to-cart" data-id="1">Add to Cart</button>
+                  <input type="number" min="1" value="1">
+                </div>
+            </div>
+            <div id="products">
+                <div class="product">
+                  <div class="slider">
+                    <img src="https://down-ph.img.susercontent.com/file/ph-11134207-7qul3-lfhlkfigkbof6e" alt="Product 2">
+                    <img src="https://down-ph.img.susercontent.com/file/86641023c18310b7a35d5128ad245a27" alt="Product 2">
+                    <img src="https://down-ph.img.susercontent.com/file/921ee1e6cc4bea2920a2fa490da03de3" alt="Product 2">
+                  </div>
+                  <h2>Dress</h2>
+                  <p>$10.00</p>
+                  <button class="add-to-cart" data-id="2">Add to Cart</button>
+                  <input type="number" min="1" value="1">
+                </div>
+            </div>
+            <div id="products">
+                <div class="product">
+                  <div class="slider">
+                    <img src="https://down-ph.img.susercontent.com/file/df07b566d493e0fb9ca3e1516918235c" alt="Product 3">
+                    <img src="https://down-ph.img.susercontent.com/file/ede68ccd94ffefdca4a9bdb896e42c3c" alt="Product 3">
+                    <img src="https://down-ph.img.susercontent.com/file/ad5ad87814391c5d4ada555771b19a09" alt="Product 3">
+                  </div>
+                  <h2>Pants</h2>
+                  <p>$10.00</p>
+                  <button class="add-to-cart" data-id="3">Add to Cart</button>
+                  <input type="number" min="1" value="1">
+                </div>
+            </div>
+                <!-- Add similar input fields for other products -->
+            </div>
+         
+        </main>
+        <!-- Cart Summary -->
+           <footer>
+            <section id="cart-summary">
+                <h2>Cart Summary</h2>
+                <h3>Selected Items:</h3>
+                <ul id="selected-items">
+                </ul>
+                <br>
+                <p>Total: $<span id="total-price">0.00</span></p>
+                <br>
+                <div>
+                    <h3>Payment Options</h3>
+                    <label for="credit-card">
+                        <input type="radio" id="credit-card" name="payment-method" value="credit-card">Credit Card
+                    </label>
+                    <label for="paymaya">
+                        <input type="radio" id="paymaya" name="payment-method" value="paymaya">PayMaya
+                    </label>
+                    <label for="gcash">
+                        <input type="radio" id="gcash" name="payment-method" value="gcash">GCash
+                    </label>
+                    <label for="coins.ph">
+                        <input type="radio" id="coins.ph" name="payment-method" value="coins.ph">Coins.ph
+                    </label>
+                </div>
+                <div>
+                    <button>
+                        <a id="pay-button" href="#" disabled>Pay</a>
+                    </button>
+                </div>
+            </section>
+           </footer>
+        <script src="shop_script.js"></script>
+    </body>
+</html>
